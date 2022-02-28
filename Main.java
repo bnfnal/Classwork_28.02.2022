@@ -25,8 +25,18 @@ public class Main {
         System.out.println("Введите элементы массива (целые числа)");
         for (int i = 0; i<m; i++){
             array[i] = sc.nextInt();
+            System.out.println(array[i]);
         }
         System.out.println("Ответ: " + SumOfPositive(array));
+        System.out.println();
+        
+        System.out.println("Задача №3: Opposite number");
+        // Very simple, given an integer or a floating-point number, find its opposite.
+        // Function OppositeNumber(int y)
+        
+        System.out.println("Введите целое число");
+        int y = sc.nextInt();
+        System.out.println("Ответ: " + OppositeNumber(y));
         System.out.println();
     }
     
@@ -51,4 +61,8 @@ public class Main {
         return sum;
     }
 
+    public static int OppositeNumber(int y)
+    {
+        return (y*(-1));
+    }
 }
