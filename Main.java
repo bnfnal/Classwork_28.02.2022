@@ -32,10 +32,10 @@ public class Main {
         
         System.out.println("Задача №3: Opposite number");
         // Very simple, given an integer or a floating-point number, find its opposite.
-        // Function OppositeNumber(int y)
+        // Function OppositeNumber(float y)
         
-        System.out.println("Введите целое число");
-        int y = sc.nextInt();
+        System.out.println("Введите число");
+        float y = sc.nextFloat();
         System.out.println("Ответ: " + OppositeNumber(y));
         System.out.println();
     }
@@ -61,8 +61,8 @@ public class Main {
         return sum;
     }
 
-    public static int OppositeNumber(int y)
+    public static float OppositeNumber(float y)
     {
-        return (y*(-1));
+        return (-y);
     }
 }
